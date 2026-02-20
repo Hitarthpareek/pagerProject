@@ -1,5 +1,4 @@
 import './App.css'
-import { Form } from './components/form'
 import MessageList from './components/MessageList.jsx'
 import { useState } from 'react';
 

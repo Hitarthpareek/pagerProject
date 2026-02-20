@@ -1,0 +1,21 @@
+import './App.css'
+import { Form } from './components/form'
+import MessageList from './components/MessageList.jsx'
+import { useState } from 'react';
+
+function App() {      
+ const [refresh, setRefresh] = useState(false);
+
+  return (
+    <div className="App">
+      <div className="container">
+        <div className="shape-1"></div>
+        <div className="shape-2"></div>
+        <Form refresh={refresh} setRefresh={setRefresh}></Form>
+      </div>
+      <MessageList refresh={refresh}></MessageList>
+    </div>
+  )
+}
+
+export default App

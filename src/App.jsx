@@ -1,6 +1,7 @@
 import './App.css'
 import MessageList from './components/MessageList.jsx'
 import { useState } from 'react';
+import { Form } from './components/Form';
 
 function App() {      
  const [refresh, setRefresh] = useState(false);
